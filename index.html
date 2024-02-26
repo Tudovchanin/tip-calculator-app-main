@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- displays site properly based on user's device -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<title>Frontend Mentor | Tip calculator app</title>
+
+</head>
+
+<body>
+	<div class="wrapper-card">
+		<h1 class="title-body" tabindex="0">SPLI<br>TTER</h1>
+		<article class="card">
+			<section class="data-selection-block">
+				<label class="title title-bill" for="bill-id">Bill</label>
+				<input type="text" class="bill" id="bill-id">
+				<h2 class="title" aria-label="Select Tip %" tabindex="0">Select Tip %</h2>
+				<div class="container-percentage" aria-label="percentage">
+					<button class="percentage" value="5">5%</button>
+					<button class="percentage" value="10">10%</button>
+					<button class="percentage" value="15">15%</button>
+					<button class="percentage" value="25">25%</button>
+					<button class="percentage" value="50">50%</button>
+					<input type="text" class="custom-percentage" placeholder="Custom %">
+				</div>
+				<label class="title title-people" for="people">Number of People <span
+						class="error-people error-people-deactive">Can't be zero</span></label>
+				<input type="text" class="bill number-of-people" id="people">
+			</section>
+			<section class="result-display-block" aria-label="result display">
+				<div class="container-title-result">
+					<label class="title-result" for="tip">
+						Tip Amount<br>
+						<span class="person">/ person</span>
+					</label>
+					<input type="text" class="tip-amount" id="tip" value="$0.00" readonly>
+				</div>
+				<div class="container-title-result">
+					<label class="title-result" for="total">
+						Total<br>
+						<span class="person">/ person</span>
+					</label>
+					<input type="text" class="tip-amount total-person" id="total" value="$0.00" readonly>
+				</div>
+				<button class="reset">RESET</button>
+			</section>
+		</article>
+	</div>
+
+	<script src="js.js"></script>
+</body>
+
+</html>
+
+
